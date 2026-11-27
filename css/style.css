@@ -1,0 +1,94 @@
+/*
+ * @Autor: Jose Luis Garcia Martinez
+ * Descripción: Estilo y ubicaciones de los elementos
+ * Versión: 1.0
+ */
+
+#matrix {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+body {
+  background-color: #050505;
+  color: #00ff41;
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.ubicacion-de-textarea {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  max-width: 850px;
+}
+
+.textarea-style {
+  flex: 1;
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 180px;
+  padding: 12px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 15px;
+  color: #00ff41;
+  background-color: #000000;
+  border: 1px solid #008f11;
+  border-radius: 0;
+  resize: none;
+  outline: none;
+}
+
+.textarea-style::placeholder {
+  color: #00590b;
+}
+
+.ubicacion-de-botones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 850px;
+  flex-wrap: wrap;
+}
+
+.btn-style {
+  background-color: #023008;
+  color: #00ff41;
+  border: 1px solid #00ff41;
+  padding: 10px 20px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 0;
+  cursor: pointer;
+  text-transform: uppercase;
+  box-shadow: 0 0 8px rgba(0, 255, 65, 0.2);
+  transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-style:hover {
+  background-color: #00ff41;
+  color: #000000;
+  box-shadow: 0 0 18px rgba(0, 255, 65, 0.7);
+}
+
+.btn-style:active {
+  transform: scale(0.90);
+}

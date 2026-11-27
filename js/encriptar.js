@@ -1,3 +1,9 @@
+/**
+ * Descripción: Se genera la encriptacion del texto.
+ * @author Jose Luis Garcia Martinez.
+ * @version 1.0
+ */
+
 function encriptar(){
 
     let nombre=document.getElementById("txt").value;

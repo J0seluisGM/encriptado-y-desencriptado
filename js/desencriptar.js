@@ -1,3 +1,9 @@
+/**
+ * Descripción: Se genera la desencriptacion del texto.
+ * @author Jose Luis Garcia Martinez.
+ * @version 1.0
+ */
+
 function desencriptar(){
 
     let nombre=document.getElementById("txt").value;

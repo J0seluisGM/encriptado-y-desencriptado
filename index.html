@@ -1,20 +1,40 @@
+<!--
+  @author: Jose Luis Garcia Martinez.
+  Descripción: Pagina de inicio
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="author" content="Jose Luis Garcia Martinez">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="js\encriptar.js"></script>
     <script src="js\desencriptar.js"></script>
     <script src="js\copiar.js"></script>
+    
+
     <title>Encriptador</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <textarea id="txt" rows="10" cols="50"></textarea>
-    <textarea id="txt2" rows="10" cols="50"></textarea>
-    <br>
-    <button onclick="encriptar()">Ecnriptar</button>
-    <button onclick="desencriptar()">Desencriptar</button>
-    <button id="cop" onclick="copi()">Copiar</button> <span id="copyAnswer"></span>
+
+    <canvas id="matrix"></canvas>
+
+    <div class="ubicacion-de-textarea">
+        <textarea class="textarea-style" id="txt" rows="10" placeholder="Escribe el texto a encriptar o desencriptar"></textarea>
+        <textarea class="textarea-style" id="txt2" rows="10" placeholder="Esperando el resultado" readonly></textarea>
+       
+    </div>
+
+    <div class="ubicacion-de-botones">
+        <button onclick="encriptar()" class="btn-style">Ecnriptar</button>
+        <button onclick="desencriptar()" class="btn-style">Desencriptar</button>
+        <button id="cop" onclick="copi()" class="btn-style">Copiar</button> <span id="copyAnswer"></span>
+
+    </div>
+ 
+    <script src="js\fondomatrix.js"></script>
+    
 </body>
 </html>
